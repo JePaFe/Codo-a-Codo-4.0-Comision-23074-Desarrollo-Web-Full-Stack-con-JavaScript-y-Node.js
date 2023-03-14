@@ -1,0 +1,17 @@
+p {
+    color: red;
+}
+
+.color-verde {
+    color: green;
+}
+
+#color-azul {
+    color: chocolate;
+}
+
+/* 1, 0, 2 */
+div p#color-azul {
+    color: blue;
+}
+

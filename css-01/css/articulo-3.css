@@ -1,0 +1,21 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: darkorange;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    background-color: aqua;
+    color: greenyellow;
+}
+
+p {
+    color: red;
+}
+
+a {
+    color: inherit;
+}
