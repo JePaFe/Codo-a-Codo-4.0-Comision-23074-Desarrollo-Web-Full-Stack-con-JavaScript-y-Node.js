@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body p {
+    color: rgb(255, 0, 0);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: violet;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.color-azul {
+    color: blue;
+}
+
+#color-verde {
+    color: green;
+}
+
+.menu > li {
+    color: red;
+}
+
+h2 ~ p {
+    color: darkorange;
+}
