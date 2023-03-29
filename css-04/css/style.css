@@ -1,0 +1,44 @@
+h1:hover {
+    color: goldenrod;
+}
+
+input:focus {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.cuadrado {
+    margin-top: 1em;
+    width: 200px;
+    height: 600px;
+    background-color: red;
+
+    background-image: url(../img/arbol.png);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+
+.cuadrado:hover {
+    background-color: aqua;
+}

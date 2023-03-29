@@ -1,0 +1,35 @@
+p:nth-of-type(odd) {
+    color: red;
+}
+
+.primer-elemento::first-letter {
+    font-size: 3em;
+}
+
+p::first-line {
+    color: green;
+}
+
+p::selection {
+    background-color: red;
+    color: rgb(71, 214, 71);
+}
+
+.segundo-elemento::before {
+    content: '- ';
+    /* width: 100px;
+    height: 20px;
+    display: inline-block;
+    background-color: red; */
+}
+
+a::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: .5em;
+    background-image: url(../icons/bxs-castle.svg);
+    background-size: cover;
+    
+}
