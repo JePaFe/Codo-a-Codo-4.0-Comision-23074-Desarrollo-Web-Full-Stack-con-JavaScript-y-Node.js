@@ -1,0 +1,23 @@
+p {
+  color: red;
+}
+
+.destacado {
+  color: green;
+}
+
+#parrafo {
+  color: blue;
+}
+
+p:nth-child(3) {
+  color: darkorange;
+}
+
+.error {
+  color: red;
+}
+
+form div {
+  margin-bottom: 0.5em;
+}
