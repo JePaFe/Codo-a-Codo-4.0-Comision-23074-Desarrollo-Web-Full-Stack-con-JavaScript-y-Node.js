@@ -11,15 +11,10 @@
     <main class="container">
       <h1>Crear Usuario</h1>
 
-      <form action="/users" method="post">
+      <form action="/users" method="post" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="email" class="form-label">Correo: </label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-          />
+          <input type="email" class="form-control" id="email" name="email" />
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Contraseña :</label>

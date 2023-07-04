@@ -13,7 +13,6 @@ const uploadFile = multer({ storage });
 const controller = require("../controllers/userController");
 
 const { body } = require("express-validator");
-const validateInput = require("../middlewares/validator");
 
 const userValidations = [
   body("email")
@@ -35,7 +34,6 @@ router.post(
   "/",
   uploadFile.single("image"),
   userValidations,
-  validateInput,
   controller.store
 );
 
