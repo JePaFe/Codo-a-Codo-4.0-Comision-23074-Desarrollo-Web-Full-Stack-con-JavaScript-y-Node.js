@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
+const methodOverride = require("method-override");
+
 const session = require("cookie-session");
 
 app.use(
@@ -29,6 +31,7 @@ app.set("layout", "./layouts/public");
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride("_method"));
 
 app.use("/", require("./src/routes/authRouter"));
 
@@ -36,6 +39,7 @@ app.get("/", (req, res) => {
   res.render("index", { texto: "Hola EJS!!!" });
 });
 
+app.use("/roles", isLogin, require("./src/routes/roleRouter"));
 app.use("/users", isLogin, require("./src/routes/userRouter"));
 
 const PORT = process.env.PORT || 3000;
